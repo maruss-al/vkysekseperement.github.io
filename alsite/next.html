@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="9d6e3e808a5b9613" />
+    <title>Вкусные Эксперименты - Рецепты</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <button id="themeToggle" class="theme-toggle">Сменить тему</button> <!-- Кнопка для смены темы -->
+        <input type="text" id="searchInput" placeholder="Поиск рецепта..." onkeyup="filterRecipes()" class="search-input">
+        <h1 class="title">Вкусные Эксперименты</h1>
+        <div class="recipe-list" id="recipeList">
+            <div id="recipe1" class="recipe-item" onclick="goToRecipe('recipe1')">
+                <img src="recipe1.jpg" alt="Рецепт 1" class="recipe-image">
+                <h2 class="recipe-title">Рецепт 1: Пирог с яблоками</h2>
+                <p class="recipe-description">Нежный пирог с сочными яблоками, идеальный для семейного чаепития.</p>
+            </div>
+            <div id="recipe2" class="recipe-item" onclick="goToRecipe('recipe2')">
+                <img src="recipe2.jpg" alt="Рецепт 2" class="recipe-image">
+                <h2 class="recipe-title">Рецепт 2: Спагетти карбонара</h2>
+                <p class="recipe-description">Классическое итальянское блюдо с насыщенным вкусом и ароматом.</p>
+            </div>
+            <div id="recipe3" class="recipe-item" onclick="goToRecipe('recipe3')">
+                <img src="recipe3.jpg" alt="Рецепт 3" class="recipe-image">
+                <h2 class="recipe-title">Рецепт 3: Салат Цезарь</h2>
+                <p class="recipe-description">Свежий салат с хрустящими крутонами и нежным соусом.</p>
+            </div>
+            <div id="recipe4" class="recipe-item" onclick="goToRecipe('recipe4')">
+                <img src="recipe4.jpg" alt="Рецепт 4" class="recipe-image">
+                <h2 class="recipe-title">Рецепт 4: Паста с лососем и шпинатом</h2>
+                <p class="recipe-description">Нежная паста с лососем и свежим шпинатом в сливочном соусе.</p>
+            </div>
+            <div id="recipe5" class="recipe-item" onclick="goToRecipe('recipe5')">
+                <img src="recipe5.jpg" alt="Рецепт 5" class="recipe-image">
+                <h2 class="recipe-title">Рецепт 5: Овощное рагу</h2>
+                <p class="recipe-description">Сытное и полезное овощное рагу, идеально подходящее для быстрого ужина.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
